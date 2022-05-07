@@ -1,11 +1,12 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+An application to learn ruby.
 
 Things you may want to cover:
 
 * Ruby version
+
+`Ruby v2.6.6 or higher`
 
 * System dependencies
 
