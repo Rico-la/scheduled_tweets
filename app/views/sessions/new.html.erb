@@ -1,17 +1,17 @@
 <h1>Sign in</h1>
 
-<%= form_tag sign_in_path do |form| %>
+<%= form_with url: sign_in_path do |form| %>
    <div class="mb-3">
-    <%= label_tag :email%>
-    <%= text_field_tag :email %>
+    <%= form.label :email%>
+    <%= form.text_field :email, class: "form-control", placeholder: "alan@turing.com" %>
   </div>
 
   <div class="mb-3">
-    <%= label_tag :password%>
-    <%= password_field_tag :password %>
+    <%= form.label :password%>
+    <%= form.password_field :password, class: "form-control", placeholder: "password" %>
   </div>
 
    <div class="mb-3">
-    <%= submit_tag "Sign In", class: "btn btn-primary"%>
+    <%= form.submit "Sign In", class: "btn btn-primary"%>
   </div>
 <% end %>
