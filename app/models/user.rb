@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+  has_many :twitter_accounts
   has_secure_password
 
   EMAIL_REGEX = /\A[^@\s]+@[^@\s]+\z/
